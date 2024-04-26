@@ -1,0 +1,23 @@
+<table>
+
+<p style="color: green"><%= notice %></p>
+<%= form_tag '/users/login' do  %>
+  <tr>
+    <td> Username: </td>
+    <td>
+      <%= text_field_tag "username" %>
+    </td>
+  </tr>
+  <tr>
+
+    <td> Password: </td>
+    <td> <%= password_field_tag "password" %>
+    </td>
+  </tr>
+  <tr>
+    <td colspan = 2>
+      <%= submit_tag "Submit" %>
+    </td>
+  </tr>
+<% end %>
+</table>
